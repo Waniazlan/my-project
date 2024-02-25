@@ -1,6 +1,6 @@
 {
     "scripts": {
-      "start": "nodemon index.js"
+      "start": "node index.js"
     },
     "dependencies":
     {"autoprefixer":"^10.4.17",
