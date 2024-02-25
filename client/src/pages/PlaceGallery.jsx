@@ -19,7 +19,7 @@ export default function PlaceGallery({place}){
                 {place?.photos?.length > 0 && place.photos.map((photo,index) =>{
                     return(
                         <div key={index} className=''>              
-                        <img className='object-cover' src={'http://localhost:4000/uploads/'+photo}  alt='photo'/>                  
+                        <img className='object-cover' src={'https://my-project-1-5046.onrender.com/uploads/'+photo}  alt='photo'/>                  
                     </div>
                     )                 
                 })}
@@ -34,16 +34,16 @@ export default function PlaceGallery({place}){
         <div className="grid gap-2 grid-cols-[2fr_1fr] rounded-2xl overflow-hidden">
             <div>
                 {place.photos?.[0] && (
-                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover " src={'http://localhost:4000/uploads/'+place.photos[0]}></img>
+                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover " src={'https://my-project-1-5046.onrender.com/uploads/'+place.photos[0]}></img>
                 )}
             </div>
             <div className="grid ">
             {place.photos?.[1] && (
-                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover" src={'http://localhost:4000/uploads/'+place.photos[1]}></img>
+                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover" src={'https://my-project-1-5046.onrender.com/uploads/'+place.photos[1]}></img>
                 )}
                 <div className="overflow-hidden">
                 {place.photos?.[2] && (
-                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover relative top-2" src={'http://localhost:4000/uploads/'+place.photos[2]}></img>
+                    <img onClick={() =>setShowAllPhoto(true)} className="cursor-pointer aspect-square object-cover relative top-2" src={'https://my-project-1-5046.onrender.com/uploads/'+place.photos[2]}></img>
                 )}
                 </div>
                 
