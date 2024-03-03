@@ -7,6 +7,6 @@ export default function PlaceImg({place,index=0,className=null}){
     }
     return(
 
-        <img  className={className} src={'https://my-project-1-5046.onrender.com/uploads/'+place.photos[index]}></img>
+        <img  className={className} src={'https://travelapp-o3xf.onrender.com/uploads/'+place.photos[index]}></img>
     );
 }
